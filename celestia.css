@@ -1,0 +1,154 @@
+body {
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#2f2727), to(black));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+margin: 0;
+    padding: 0;
+}
+.container {
+        padding: 20px;
+        max-width: 1200px;
+        max-height: 700px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      /* Адаптивные стили */
+      @media (max-width: 767px) {
+        .container {
+          padding: 15px;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+          padding: 20px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .container {
+          padding: 30px;
+        }
+      }
+h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #bbb;
+}
+h1 span {
+  border: 2px solid #dfdfdf;
+  padding: 3px 2px 3px 7px;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: bold;
+  color: goldenrod;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.tags-input span {
+  background: #bbb;
+  margin-right: 7px;
+  color: #fff;
+  padding: 4px 7px;
+  border-radius: 20px;
+}
+.tags-input span[data-selected] {
+  background: #f4f6f6;
+}
+.tags-input::after {
+  content: "";
+  background: #888;
+  width: 1px;
+  height: 19px;
+  margin: -1px 0 0 -1px;
+  display: none;
+  -webkit-animation: blink 0.5s infinite alternate;
+          animation: blink 0.5s infinite alternate;
+}
+.tags-input1:focus {
+  border-color: #494949;
+  outline: none;
+}
+.tags-input1:focus[data-cursor]::after {
+  display: block;
+}
+
+
+
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #d6b70ada;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #ffffffda;
+  color: #000000;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 736px) {
+  .tags-input:focus[data-cursor]::after {
+    display: none;
+  }
+}
+.tags-input1.tags-input + h1 {
+  color: #696a6a;
+}
+.tags-input1.tags-input + h1 span {
+  border-color: #d6b70ada;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
